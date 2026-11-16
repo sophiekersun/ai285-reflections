@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Week 12 | AI 285 Weekly Reflections</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <p class="kicker">Penn State · AI 285 · Fall 2026</p>
+      <h1>Digital Reflection Journal</h1>
+      <p class="byline">Sophie Kersun</p>
+      <nav><a href="index.html">Home</a></nav>
+    </div>
+  </header>
+
+  <main>
+    <article class="post">
+      <header>
+        <p class="date">Week of November 9, 2026</p>
+        <h1>Week 12</h1>
+      </header>
+
+      <p>This week we started building. I used Claude Code to build the application itself, and it is now deployed and live.</p>
+
+      <p>One thing changed from what I wrote last week. In Week 10 I said I wanted to make the onboarding questions more exhaustive so the recommendations would be better grounded. What I actually did was close to the opposite. I kept the onboarding to eight questions and chose them from my literature review instead of adding more. The grounding came from somewhere else: a knowledge base of 25 statements, each one tied to a specific paper and page from the research I had been reading since Week 9. The recommendations are chosen by fixed rules, and the code rejects any citation that is not in that knowledge base.</p>
+
+      <p>The clearest example of why that mattered came early. When I asked Claude which financing mechanisms to include, it proposed grants, asset financing, and revenue-based financing from its general knowledge. I then gave it my four research papers and asked it to work only from those. Held to my own sources, it found that asset financing was not actually covered in any of them, and replaced it with equity. I then renamed all three in plainer language, so the app says grants, equity, and revenue-based financing rather than the academic terms.</p>
+
+      <p>It also told me what it could not be sure about. The papers I used are not specific to Kenya, and the text extraction from the PDFs scrambled some of the tables, so all 25 citations still need to be checked against the original documents. I have not done that yet. It is on my list before this goes any further.</p>
+
+      <p>I also showed the build to one person this week. They said it was quick and easy to follow, and the part that stood out to them was the explanation of why irregular sales made revenue-based financing a poor fit. What they would change is that each recommendation needs a clear next step. They saw equity ranked above grants and were not sure which one they were supposed to pursue first. That is the next thing I am adding.</p>
+
+      <div class="tools"><strong>AI tools this week:</strong> Claude Code — read my build plan and research papers, helped choose the three financing mechanisms, built and deployed the application. Vercel — hosting and deployment. What I changed: Claude initially proposed asset financing based on its general knowledge, but when I made it work only from my four research papers it found that none of them covered it, so it was replaced with equity.</div>
+
+      <nav class="post-nav">
+        <a href="week11.html">← Week 11</a>
+        <a href="index.html">Home →</a>
+      </nav>
+    </article>
+  </main>
+
+  <footer>Written by Sophie Kersun. Built with Claude Code and hosted on GitHub Pages.</footer>
+</body>
+</html>
